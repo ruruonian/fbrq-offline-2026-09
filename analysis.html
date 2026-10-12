@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="assets/brand/Fabrique-symbol-orange-clearspace.svg" type="image/svg+xml" />
+<title>分析总结 · Fabrique 国内线下门店 2026 年 9 月复盘</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body data-page="analysis">
+
+<header id="site-nav"></header>
+
+<main>
+  <div class="narrow page-head">
+    <p class="eyebrow">Analysis</p>
+    <h1 class="page-title">分析总结与后续落地动作</h1>
+    <p class="page-sub">
+      四问顺序为场 → 员 → 人 → 货，覆盖表 1 至表 4；文字逐句来自月报分析，未改写、未新增结论。
+      页末为全部门店汇总数据，可用门店筛选查看单店。
+    </p>
+  </div>
+
+  <nav class="anchors" aria-label="页面锚点">
+    <div class="narrow">
+      <ul>
+        <li><a href="#context">口径说明</a></li>
+        <li><a href="#diagnosis">第一问 · 目标达成诊断</a></li>
+        <li><a href="#opportunity">第二问 · 机会点</a></li>
+        <li><a href="#risk">第三问 · 风险点</a></li>
+        <li><a href="#attribution">第四问 · 初步归因</a></li>
+        <li><a href="#summary">全部门店汇总数据</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section" id="context">
+    <div class="narrow">
+      <div class="section-head">
+        <span class="section-index">00</span>
+        <h2>口径说明</h2>
+        <p class="section-note">逐行取自复盘表口径说明</p>
+      </div>
+      <div class="panel reveal">
+        <button class="panel-head" type="button" aria-expanded="false">
+          <span><h3>复盘口径</h3><span class="panel-meta">点开查看 7 行口径</span></span>
+          <svg class="panel-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="panel-body" id="context-table"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="diagnosis">
+    <div class="narrow">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <h2>第一问 · 目标达成诊断</h2>
+        <p class="section-note">场 → 员 → 人 → 货</p>
+      </div>
+      <div id="diagnosis-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="opportunity">
+    <div class="narrow">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <h2>第二问 · 机会点</h2>
+      </div>
+      <div id="opportunity-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="risk">
+    <div class="narrow">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <h2>第三问 · 风险点</h2>
+      </div>
+      <div id="risk-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="attribution">
+    <div class="narrow">
+      <div class="section-head">
+        <span class="section-index">04</span>
+        <h2>第四问 · 初步归因与建议动作</h2>
+      </div>
+      <div id="attribution-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="summary">
+    <div class="narrow">
+      <div class="section-head">
+        <span class="section-index">05</span>
+        <h2>全部门店汇总数据</h2>
+        <p class="section-note">表头与分组逐字沿用复盘表；表 3 不受门店筛选影响</p>
+      </div>
+      <div class="toolbar">
+        <label for="store-filter" class="toolbar-hint">门店筛选</label>
+        <select class="filter-select" id="store-filter"></select>
+        <span class="toolbar-hint">筛选只影响明细区，不影响 KPI 与四问文字</span>
+      </div>
+      <div class="grid" style="margin-bottom:24px">
+        <div class="card">
+          <p class="kpi-label">四家正店达成率对比</p>
+          <div class="chart" data-chart="store-rate"></div>
+        </div>
+        <div class="card">
+          <p class="kpi-label">全店段一级品类销售额结构</p>
+          <div class="chart" data-chart="category"></div>
+        </div>
+      </div>
+      <div id="tables"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/charts.js"></script>
+</body>
+</html>

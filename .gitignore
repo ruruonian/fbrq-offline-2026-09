@@ -1,0 +1,6 @@
+# 部署/构建过程中产生的临时目录
+.vercel/
+.vercel
+node_modules/
+Thumbs.db
+desktop.ini
